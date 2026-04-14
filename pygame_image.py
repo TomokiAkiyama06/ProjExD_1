@@ -38,7 +38,7 @@ def main():
             move_x -= 1
         if key_lst[pg.K_RIGHT]:
             move_x += 1
-        kk_rct.move_ip(move_x, move_y)
+        kk_rct.move_ip(move_x, move_y)  # move_ipは1回のみ使用
         screen.blit(kk_img, kk_rct)
         pg.display.update()
         tmr += 1
